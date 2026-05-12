@@ -1,1 +1,5 @@
 dotenv
+pandas
+numpy
+scikit-learn
+redis
