@@ -8,8 +8,7 @@ def create_token(data: dict, expire_minutes = 30):
     expire = datetime.now(timezone.utc) + timedelta(minutes = expire_minutes)
     to_encode.update({'exp' : expire})
     return jwt.encode(
-        settings.JWT_SECRET_KEY,
-        algorithms  = settings.JWT_ALGORITHM        
+        to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM
     )
    
     
