@@ -1,5 +1,5 @@
 from datetime import datetime, timezone, timedelta
-from jose import jwt, JWTError
+from jose import Jwt, JWTError
 from app.core.config import settings
 
 
@@ -7,7 +7,7 @@ def create_token(data: dict, expire_minutes = 30):
     to_encode = data.copy()
     expire = datetime.now(timezone.utc) + timedelta(minutes = expire_minutes)
     to_encode.update({'exp' : expire})
-    return jwt.encode(
+    return Jwt.encode(
         settings.JWT_SECRET_KEY,
         algorithms  = settings.JWT_ALGORITHM        
     )
@@ -15,7 +15,7 @@ def create_token(data: dict, expire_minutes = 30):
     
 def verify_token(token: str):
     try:
-        payload = jwt.decode(
+        payload = Jwt.decode(
             token, settings.JWT_SECRET_KEY, algorithms = [settings.JWT_ALGORITHM]    
         )
         return payload
