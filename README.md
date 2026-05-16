@@ -11,7 +11,7 @@ This project is a **Machine Learning-powered API** built using **FastAPI** to pr
 - ⚡ **Redis Caching**: Avoid redundant model computation
 - 📈 **Monitoring Ready**: Prometheus metrics + Grafana dashboards
 - 🐳 **Dockerized Setup**: Simplified deployment with Docker Compose
-- ☁️ **Cloud Deployment**: Easily deploy to [Render](https://render.com)
+- ☁️ **Cloud Deployment**: Live link [Render](https://web-api-using-fastapi.onrender.com/docs)
 
 ---
 
@@ -74,12 +74,6 @@ docker-compose up --build
 2. Add render.yaml to the project root
 3. Create a new Web Service on Render
 4. Include environment variables
-
----
-
-## 🤝 Contributing
-
-Feel free to fork this repo, open issues, and submit pull requests.
 
 ---
 
