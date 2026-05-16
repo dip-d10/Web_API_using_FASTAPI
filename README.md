@@ -87,4 +87,4 @@ Sumanta Jyoti
 
 Feel free to connect:
 - [Email](mailto:sumantajyoti795@gmail.com)
-- [LinkedIN](https://www.linkedin.com/in/dip-d10/)
+- [LinkedIN](https://www.linkedin.com/in/sumanta-jyoti)
